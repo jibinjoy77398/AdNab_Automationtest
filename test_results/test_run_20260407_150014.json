@@ -1,0 +1,56 @@
+{
+    "scenario": "Search for a product and add it to the cart",
+    "overall_status": "PASS",
+    "start_time": "2026-04-07T15:00:14.316915",
+    "end_time": "2026-04-07T15:00:25.649423",
+    "steps": [
+        {
+            "step": "Login",
+            "status": "PASS",
+            "timestamp": "2026-04-07T15:00:16.415571",
+            "details": "Logged in successfully."
+        },
+        {
+            "step": "Find Product",
+            "status": "PASS",
+            "timestamp": "2026-04-07T15:00:22.260139",
+            "details": "Found product: 'Selling Plans Ski Wax'"
+        },
+        {
+            "step": "Search Product",
+            "status": "PASS",
+            "timestamp": "2026-04-07T15:00:22.671150",
+            "details": "Searched for: 'Selling Plans Ski Wax'"
+        },
+        {
+            "step": "Verify Search Results",
+            "status": "PASS",
+            "timestamp": "2026-04-07T15:00:23.273198",
+            "details": "Product found in search results."
+        },
+        {
+            "step": "Open PDP",
+            "status": "PASS",
+            "timestamp": "2026-04-07T15:00:23.757796",
+            "details": "Clicked product to open PDP."
+        },
+        {
+            "step": "Verify PDP",
+            "status": "PASS",
+            "timestamp": "2026-04-07T15:00:23.799098",
+            "details": "PDP heading matches: 'Selling Plans Ski Wax'"
+        },
+        {
+            "step": "Add to Cart",
+            "status": "PASS",
+            "timestamp": "2026-04-07T15:00:25.147096",
+            "details": "Product added to cart, badge updated to 1."
+        },
+        {
+            "step": "Verify Cart",
+            "status": "PASS",
+            "timestamp": "2026-04-07T15:00:25.647500",
+            "details": "Product 'Selling Plans Ski Wax' verified in cart."
+        }
+    ]
+}

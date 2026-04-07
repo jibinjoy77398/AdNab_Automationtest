@@ -7,12 +7,7 @@ class DriverFactory:
 
     @staticmethod
     def get_driver(browser_type="chrome"):
-        """
-        Creates and returns a WebDriver instance based on the browser type.
-        
-        :param browser_type: The browser to use (default: chrome).
-        :return: WebDriver instance.
-        """
+        """:return: WebDriver instance """
         if browser_type.lower() == "chrome":
             options = webdriver.ChromeOptions()
             options.add_argument("--start-maximized")

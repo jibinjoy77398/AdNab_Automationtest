@@ -3,8 +3,6 @@ from pages.base_page import BasePage
 
 
 class LoginPage(BasePage):
-    """Page Object for the Shopify password-protected storefront."""
-
     __password_input_field = (By.ID, "password")
     __password_submit_button = (By.CSS_SELECTOR, "button[type='submit']")
 

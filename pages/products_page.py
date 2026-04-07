@@ -31,8 +31,7 @@ class ProductsPage(BasePage):
 
     def find_first_available_product(self):
         """
-        Iterates through catalog pages and returns the name of
-        the first product whose Add to Cart button is enabled (not sold out).
+        It scans the pages and returns the name of the first product with an active 'Add to Cart' button
         """
         while True:
             cards = self.wait.until(
@@ -66,7 +65,7 @@ class ProductsPage(BasePage):
         search_input.send_keys(product_name)
 
     def get_search_result_names(self):
-        """Returns a list of visible product names from the predictive search dropdown."""
+        """Returns the names of the suggested products in the search bar"""
         self.wait.until(
             EC.presence_of_all_elements_located(self.__search_results_links)
         )
